@@ -33,6 +33,7 @@ jobs:
       - uses: azure/webapps-deploy@v3
         with:
           app-name: ${{ vars.AZURE_WEBAPP_NAME }}
+          resource-group-name: jmsdemo2
           images: ${{ env.IMAGE_NAME }}
           registry-login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
           registry-username: ${{ secrets.REGISTRY_USERNAME }}
